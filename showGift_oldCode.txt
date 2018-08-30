@@ -1,0 +1,13 @@
+ $sql="SELECT * FROM gift_recommendation";
+//        $arr = array();
+//        $result = mysql_query($sql);
+//        while($result){
+//            if ("SELECT * FROM gift_recommendation WHERE ageGroup='15-20'"){
+//                if ("")
+//                
+//        }
+//        $row = mysqli_fetch_array($result);
+//            }
+////        $result = mysqli_query($conn, $sql);
+////        $row = mysqli_fetch_array($result);
+//            

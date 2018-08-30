@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Gifting_Guru">
+    <serverData>
+      <paths name="Gifting_Guru">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="Gifting_Guru" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
