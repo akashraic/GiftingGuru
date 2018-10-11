@@ -23,7 +23,7 @@ function Save(){
     VALUES ('$age', '$gender' , '$budget', '$attributeGroup', '$subattributeGroup' , '$attributeGroup2' , '$subattributeGroup2' , '$attributeGroup3' , '$subattributeGroup3')";
 
         mysqli_query($conn,$sql);
-        echo "<br/><br/><span>Data Inserted successfully...!!</span>";
+//        echo "<br/><br/><span>Data Inserted successfully...!!</span>";
     }
     else{
         echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";

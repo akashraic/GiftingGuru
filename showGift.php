@@ -42,11 +42,15 @@
 
 
        // print_r($arr);
-
+        echo "<div>";
         foreach($arr as $teams) {
-                echo "<a href=\"" . $teams['giftURL']. "\"><img src=\"".$teams['giftPicture']."\"/></a>";
-                echo "<br><br>";
+                echo "<a href=\"" . $teams['Gift_1']. "\"><img src=\"".$teams['giftPicture1']."\"/></a>";
+                echo "<a href=\"" . $teams['Gift_2']. "\"><img src=\"".$teams['giftPicture2']."\"/></a>";
+                echo "<a href=\"" . $teams['Gift_3']. "\"><img src=\"".$teams['giftPicture3']."\"/></a>";
+                echo "<a href=\"" . $teams['Gift_4']. "\"><img src=\"".$teams['giftPicture4']."\"/></a>";
+                echo "<a href=\"" . $teams['Gift_5']. "\"><img src=\"".$teams['giftPicture5']."\"/></a>";
         }
+        echo "</div>";
         ?>
             
             
