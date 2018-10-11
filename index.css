@@ -1,0 +1,26 @@
+body
+{
+    background-color: red;
+}
+
+#how
+{
+    padding: 5% 0 5% 0;
+}
+
+.ageArea
+{
+    margin: 0 auto;
+    align-items: center;
+}
+
+.genArea
+{
+    margin: 0 auto;
+}
+
+.budgetArea
+{
+    margin: 0 auto;
+
+}
