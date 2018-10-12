@@ -50,14 +50,39 @@
         $stmt->execute();
         $result = $stmt->get_result();
 
+
         //echo $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
 
 
+        //------------ Randomized
+
         //TODO: different attributes filtering
+        $results = array();
+        $index = 0;
+
+        while ($row = $result->fetch_assoc()){
+            if (isset($row['Gift_1']) && $row['Gift_1'] != '-') $results[$index++] = array('url' => $row['Gift_1'], 'image' => $row['Gift_Picture_1']);
+            if (isset($row['Gift_2']) && $row['Gift_2'] != '-') $results[$index++] = array('url' => $row['Gift_2'], 'image' => $row['Gift_Picture_2']);
+            if (isset($row['Gift_3']) && $row['Gift_3'] != '-') $results[$index++] = array('url' => $row['Gift_3'], 'image' => $row['Gift_Picture_3']);
+            if (isset($row['Gift_4']) && $row['Gift_4'] != '-') $results[$index++] = array('url' => $row['Gift_4'], 'image' => $row['Gift_Picture_4']);
+            if (isset($row['Gift_5']) && $row['Gift_5'] != '-') $results[$index++] = array('url' => $row['Gift_5'], 'image' => $row['Gift_Picture_5']);
+
+            //echo "---> " . $index . "</br>";
+        }
+        //print_r($results);
+
+        echo "<div>";
+        for ($i = 0; $i < 5; $i++){
+            
+            $id = rand(1,5);
+            echo "<a href=\"" . $results[$id]['url'] . "\"><img src=\"". $results[$id]['image'] ."\"/></a>";
+        }
+        echo "</div>";
+
+        //------- Non-randomized
+        /*
         echo "<div>";
         while ($row = $result->fetch_assoc()) {
-
-            //if()
 
             if (isset($row['Gift_1']) && $row['Gift_1'] != '-') echo "<a href=\"" . $row['Gift_1'] . "\"><img src=\"". $row['Gift_Picture_1'] ."\"/></a>";
             if (isset($row['Gift_2']) && $row['Gift_2'] != '-') echo "<a href=\"" . $row['Gift_2'] . "\"><img src=\"". $row['Gift_Picture_2'] ."\"/></a>";
@@ -66,6 +91,7 @@
             if (isset($row['Gift_5']) && $row['Gift_5'] != '-') echo "<a href=\"" . $row['Gift_5'] . "\"><img src=\"". $row['Gift_Picture_5'] ."\"/></a>";
         }
         echo "</div>";
+        */
 
         ?> 
      
