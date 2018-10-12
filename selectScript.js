@@ -11,7 +11,7 @@ $(document).ready(function () {
         var val3 = $(".attr3").val();
         switch (val) {
             case "Creative":
-                $(".sattr1").html("<option value='Visual artist'>Visual Artist</option>\n\
+                $(".sattr1").html("<option value='Visual_Artist'>Visual Artist</option>\n\
                                       <option value='Musician'>Musician</option>\n\
                                       <option value='Illustrator'>Illustrator</option>\n\
                                       <option value='DIY'>DIY</option>\n\
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
         switch (val2) {
             case "Creative":
-                $(".sattr2").html("<option value='Visual artist'>Visual Artist</option>\n\
+                $(".sattr2").html("<option value='Visual_Artist'>Visual Artist</option>\n\
                                       <option value='Musician'>Musician</option>\n\
                                       <option value='Illustrator'>Illustrator</option>\n\
                                       <option value='DIY'>DIY</option>\n\
@@ -80,7 +80,7 @@ $(document).ready(function () {
         }
         switch (val3) {
             case "Creative":
-                $(".sattr3").html("<option value='Visual artist'>Visual Artist</option>\n\
+                $(".sattr3").html("<option value='Visual_Artist'>Visual Artist</option>\n\
                                     <option value='Musician'>Musician</option>\n\
                                     <option value='Illustrator'>Illustrator</option>\n\
                                     <option value='DIY'>DIY</option>\n\
