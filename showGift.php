@@ -50,20 +50,20 @@
         $stmt->execute();
         $result = $stmt->get_result();
 
-        echo $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
+        //echo $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
 
 
         //TODO: different attributes filtering
         echo "<div>";
         while ($row = $result->fetch_assoc()) {
 
-            //if ()
-   
-            echo "<a href=\"" . $row['Gift_1'] . "\"><img src=\"". $row['Gift_Picture_1'] ."\"/></a>";
-            echo "<a href=\"" . $row['Gift_2'] . "\"><img src=\"". $row['Gift_Picture_2'] ."\"/></a>";
-            echo "<a href=\"" . $row['Gift_3'] . "\"><img src=\"". $row['Gift_Picture_3'] ."\"/></a>";
-            echo "<a href=\"" . $row['Gift_4'] . "\"><img src=\"". $row['Gift_Picture_4'] ."\"/></a>";
-            echo "<a href=\"" . $row['Gift_5'] . "\"><img src=\"". $row['Gift_Picture_5'] ."\"/></a>";
+            //if()
+
+            if (isset($row['Gift_1']) && $row['Gift_1'] != '-') echo "<a href=\"" . $row['Gift_1'] . "\"><img src=\"". $row['Gift_Picture_1'] ."\"/></a>";
+            if (isset($row['Gift_2']) && $row['Gift_2'] != '-') echo "<a href=\"" . $row['Gift_2'] . "\"><img src=\"". $row['Gift_Picture_2'] ."\"/></a>";
+            if (isset($row['Gift_3']) && $row['Gift_3'] != '-') echo "<a href=\"" . $row['Gift_3'] . "\"><img src=\"". $row['Gift_Picture_3'] ."\"/></a>";
+            if (isset($row['Gift_4']) && $row['Gift_4'] != '-') echo "<a href=\"" . $row['Gift_4'] . "\"><img src=\"". $row['Gift_Picture_4'] ."\"/></a>";
+            if (isset($row['Gift_5']) && $row['Gift_5'] != '-') echo "<a href=\"" . $row['Gift_5'] . "\"><img src=\"". $row['Gift_Picture_5'] ."\"/></a>";
         }
         echo "</div>";
 
