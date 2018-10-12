@@ -14,28 +14,28 @@ $(document).ready(function () {
                 $(".sattr1").html("<option value='Visual_Artist'>Visual Artist</option>\n\
                                       <option value='Musician'>Musician</option>\n\
                                       <option value='Illustrator'>Illustrator</option>\n\
-                                      <option value='DIY'>DIY</option>\n\
-                                      <option value='Fashion Enthusiast'>Fashion Enthusiast</option>");
+                                      <option value='DIYer'>DIY</option>\n\
+                                      <option value='Fashion_Enthusiast'>Fashion Enthusiast</option>");
                 break;
             case "Adventurous" :
-                $(".sattr1").html("<option value='Nature lover'>Nature Lover</option>\n\
+                $(".sattr1").html("<option value='Nature_lover'>Nature Lover</option>\n\
                                       <option value='Foodie'>Foodie</option>\n\
                                       <option  value='Traveller'>Traveller</option>");
                 break;
             case "Intellectual" :
-                $(".sattr1").html("<option value='Academic'>Academic</option>\n\
+                $(".sattr1").html("<option value='Academia'>Academic</option>\n\
 			<option value='Worldly'>Worldly</option>");
                 break;
             case "Generous":
-                $(".sattr1").html("<option value='Big hearted'>Big Hearted</option>\n\
+                $(".sattr1").html("<option value='Big_hearted'>Big Hearted</option>\n\
 			<option value='Philanthropist'>Philanthropist</option>");
                 break;
             case "Outgoing":
-                $(".sattr1").html("<option value='Care free'>Care free</option>\n\
+                $(".sattr1").html("<option value='Care_free'>Care free</option>\n\
 			<option value='Sociable'>Sociable</option>");
                 break;
             case "Family_Oriented":
-                $(".sattr1").html("<option value='-'>Family Oriented</option>");
+                $(".sattr1").html("<option value='-'>Family_Oriented</option>");
                 break;
             case "Philosophical":
                 $(".sattr1").html("<option value='-'>Philosophical</option>");
@@ -49,28 +49,28 @@ $(document).ready(function () {
                 $(".sattr2").html("<option value='Visual_Artist'>Visual Artist</option>\n\
                                       <option value='Musician'>Musician</option>\n\
                                       <option value='Illustrator'>Illustrator</option>\n\
-                                      <option value='DIY'>DIY</option>\n\
-                                      <option value='Fashion enthusiast'>Fashion Enthusiast</option>");
+                                      <option value='DIYer'>DIY</option>\n\
+                                      <option value='Fashion_Enthusiast'>Fashion Enthusiast</option>");
                 break;
             case "Adventurous" :
-                $(".sattr2").html("<option value='Nature lover'>Nature Lover</option>\n\
+                $(".sattr2").html("<option value='Nature_lover'>Nature Lover</option>\n\
                                       <option value='Foodie'>Foodie</option>\n\
                                       <option  value='Traveller'>Traveller</option>");
                 break;
             case "Intellectual" :
-                $(".sattr2").html("<option value='Academic'>Academic</option>\n\
+                $(".sattr2").html("<option value='Academia'>Academic</option>\n\
 			<option value='Worldly'>Worldly</option>");
                 break;
             case "Generous":
-                $(".sattr2").html("<option value='Big hearted'>Big Hearted</option>\n\
+                $(".sattr2").html("<option value='Big_hearted'>Big Hearted</option>\n\
 			<option value='Philanthropist'>Philanthropist</option>");
                 break;
             case "Outgoing":
-                $(".sattr2").html("<option value='Care free'>Care free</option>\n\
+                $(".sattr2").html("<option value='Care_free'>Care free</option>\n\
 			<option value='Sociable'>Sociable</option>");
                 break;
             case "Family_Oriented":
-                $(".sattr2").html("<option value='-'>Family Oriented</option>");
+                $(".sattr2").html("<option value='-'>Family_Oriented</option>");
                 break;
             case "Philosophical":
                 $(".sattr2").html("<option value='-'>Philosophical</option>");
@@ -83,28 +83,28 @@ $(document).ready(function () {
                 $(".sattr3").html("<option value='Visual_Artist'>Visual Artist</option>\n\
                                     <option value='Musician'>Musician</option>\n\
                                     <option value='Illustrator'>Illustrator</option>\n\
-                                    <option value='DIY'>DIY</option>\n\
-                                    <option value='Fashion enthusiast'>Fashion Enthusiast</option>");
+                                    <option value='DIYER'>DIY</option>\n\
+                                    <option value='Fashion_Enthusiast'>Fashion Enthusiast</option>");
                 break;
             case "Adventurous" :
-                $(".sattr3").html("<option value='Nature lover'>Nature Lover</option>\n\
+                $(".sattr3").html("<option value='Nature_lover'>Nature Lover</option>\n\
                                     <option value='Foodie'>Foodie</option>\n\
                                     <option  value='Traveller'>Traveller</option>");
                 break;
             case "Intellectual" :
-                $(".sattr3").html("<option value='Academic'>Academic</option>\n\
+                $(".sattr3").html("<option value='Academia'>Academic</option>\n\
 			<option value='Worldly'>Worldly</option>");
                 break;
             case "Generous":
-                $(".sattr3").html("<option value='Big hearted'>Big Hearted</option>\n\
+                $(".sattr3").html("<option value='Big_hearted'>Big Hearted</option>\n\
 			<option value='Philanthropist'>Philanthropist</option>");
                 break;
             case "Outgoing":
-                $(".sattr3").html("<option value='Care free'>Care free</option>\n\
+                $(".sattr3").html("<option value='Care_free'>Care free</option>\n\
 			<option value='Sociable'>Sociable</option>");
                 break;
             case "Family_Oriented":
-                $(".sattr3").html("<option value='-'>Family Oriented</option>");
+                $(".sattr3").html("<option value='-'>Family_Oriented</option>");
                 break;
             case "Philosophical":
                 $(".sattr3").html("<option value='-'>Philosophical</option>");
