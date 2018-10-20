@@ -1,10 +1,11 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="showGift.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Your Recommendations</h1>
-        <p>the following are your recommendations:</p>
+        <h1>Your Recommendations Are Here!</h1>
 
         <?php
         require 'database.php';
@@ -21,7 +22,6 @@
         $attributeGroup3 = $_POST["attributeGroup3"];
         $subattributeGroup3 = $_POST["subattributeGroup3"];
 
-
         //Recording the current query in database
         if(isset($_POST['submit']))
         {
@@ -30,7 +30,7 @@
             mysqli_query($conn,$sql);
         }
         else{
-            echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+            echo "<p>Insertion Failed <br/> Some Fields are Blank....!</p>";
         }
 
         //Fetching the matching records from the database
@@ -75,7 +75,7 @@
         for ($i = 0; $i < sizeof($results); $i++){
             
             //$id = rand(1,5);
-            echo "<a href=\"" . $results[$i]['url'] . "\"><img src=\"". $results[$i]['image'] ."\"/></a>";
+            echo "<div class='circular'><a href=\"" . $results[$i]['url'] . "\"><img src=\"". $results[$i]['image'] ."\"/></a></div>";
         }
         echo "</div>";
 
@@ -94,6 +94,29 @@
         */
 
         ?> 
-     
+<!--        stars rating-->
+        <div class="rate-wrapper">
+            <h2>How did we do?</h2>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="5 Stars">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="4 Stars">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="3 Stars">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="2 Stars">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="1 Star">1 star</label>
+            </div>
+        </div>
+
+<!--        go home or gift page-->
+        <div style="display:block;">
+            <button class="gift_button border"><a style="text-decoration: none; color: white; margin:0 auto; justify-content: center;" href="gift.php">New Recommendation</a></button>
+            <button class="gift_button border"><a style="text-decoration: none; color: white; margin:0 auto; justify-content: center;" href="index.php">Return Home</a></button>
+        </div>
+
+
     </body>
 </html>
