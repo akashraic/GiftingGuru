@@ -51,7 +51,7 @@
         $result = $stmt->get_result();
 
 
-        //echo $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
+        echo $age . "; " . $gender . "; " . $budget . "; " . $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
 
 
         //------------ Randomized
@@ -72,10 +72,10 @@
         //print_r($results);
 
         echo "<div>";
-        for ($i = 0; $i < 5; $i++){
+        for ($i = 0; $i < sizeof($results); $i++){
             
-            $id = rand(1,5);
-            echo "<a href=\"" . $results[$id]['url'] . "\"><img src=\"". $results[$id]['image'] ."\"/></a>";
+            //$id = rand(1,5);
+            echo "<a href=\"" . $results[$i]['url'] . "\"><img src=\"". $results[$i]['image'] ."\"/></a>";
         }
         echo "</div>";
 

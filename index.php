@@ -30,7 +30,7 @@
 			        <option value="15-20">15-20</option>
 			        <option value="20-30">20-30</option>
 			        <option value="30-45">30-45</option>
-			        <option value="45 and over">45 and over</option>
+			        <option value="45_&_over">45 and over</option>
 		        </select>
             </div>
             <div class="col-3"></div>
