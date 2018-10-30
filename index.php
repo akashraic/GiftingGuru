@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./img/tab_logo.png" type="image/png">
 
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <!--<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"817937b40cace775ce4ce94ac","lid":"aa46c1180c","uniqueMethods":true}) })</script> -->
+    <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"817937b40cace775ce4ce94ac","lid":"aa46c1180c","uniqueMethods":true}) })</script>
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li style="margin: 0 2rem;" class="nav-item">
-                    <a class="nav-link" href="gift.php">GIFT <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="gift.html">GIFT <span class="sr-only">(current)</span></a>
                 </li>
                 <li style="margin: 0 2rem;" class="nav-item">
                     <a class="nav-link" href="#about_us">ABOUT</a>
@@ -51,7 +51,7 @@
         <blockquote style="font-size: 2.5rem; color:black; margin-bottom: 5%; margin-top: 0;" class="blockquote">
             <h1 class="mb-0 font_let_us">Let us find you a gift</h1>
         </blockquote>
-        <button class="gift_button border"><a style="text-decoration: none; color: white;" href="gift.php">START GIFTING</a></button>
+        <button class="gift_button" class="border"><a style="text-decoration: none; color: white;" href="gift.html">START GIFTING</a></button>
     </section>
 </div>
 
@@ -133,7 +133,7 @@
     </div>
 
     <div style="margin-bottom: 10%;" class="col-12 center_my_col">
-        <button class="gift_button border"><a style="text-decoration: none; margin-top: 0; color: white;" href="gift.php">READY, SET, GIFT</a></button>
+        <button class="gift_button border"><a style="text-decoration: none; margin-top: 0; color: white;" href="gift.html">READY, SET, GIFT</a></button>
     </div>
 
 
@@ -142,7 +142,7 @@
 
         <!--    <ul style="text-align: center; margin: 1% 0%;" class="inline_ul row">
                 <li class="nav-item col">
-                  <a class="nav-link" href="./gift.php">GIFT</a>
+                  <a class="nav-link" href="./gift.html">GIFT</a>
                 </li>
                 <li class="nav-item col">
                   <a class="nav-link" href="#about_us">ABOUT</a>

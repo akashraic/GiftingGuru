@@ -12,6 +12,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!--change script-->
+    <script type="text/javascript" src="selectScript.js"></script>
+
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -109,15 +112,6 @@
         <form action="showGift.php" method="post">
             <div class="row text-justified">
                 <div class="col-3"></div>
-                <div class="col-6 form-group text-justified emailArea">
-                    <label for="email">What is your email?</label>
-                    <input type="text" class="form-control" id="email" placeholder="someone@example.com">
-                </div>
-                <div class="col-3"></div>
-            </div>
-
-            <div class="row text-justified">
-                <div class="col-3"></div>
                 <div class="col-6 form-group text-justified ageArea">
                     <label for="age">What age group is your giftee in?</label>
                     <select name="ageGroup" class="form-control" required>
@@ -156,9 +150,9 @@
 
             <div class="row text-justified">
                 <div class="col-3"></div>
-                <div class="col-3 form-group text-justified attrArea_1">
+                <div class="col-6 form-group text-justified attrArea_1">
                     <label for="Attribute_1">Pick the first attribute from below to describe your giftee</label> <br>
-                    <select class="form-control attr1" name="attributeGroup" required>
+                    <select class="form-control attr1" name="attributeGroup"  required>
                         <option value="Select">--Select an Item--</option>
                         <option value="Creative">Creative</option>
                         <option value="Adventurous">Adventurous</option>
@@ -169,7 +163,12 @@
                         <option value="Philosophical">Philosophical</option>
                     </select>
                 </div>
-                <div class="col-3 form-group text-justified subattrArea_1">
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row text-justified">
+                <div class="col-3"></div>
+                <div class="col-6 form-group text-justified subattrArea_1">
                     <label for="subAttribute_1">Pick one sub attribute from below to describe your giftee</label> <br>
                     <select class="form-control sattr1" name="subattributeGroup" required>
                         <option value="">--Select an Item--</option>
@@ -178,20 +177,9 @@
                 <div class="col-3"></div>
             </div>
 
-<!--            <div class="row text-justified">-->
-<!--                <div class="col-3"></div>-->
-<!--                <div class="col-3 form-group text-justified subattrArea_1">-->
-<!--                    <label for="subAttribute_1">Pick one sub attribute from below to describe your giftee</label> <br>-->
-<!--                    <select class="form-control sattr1" name="subattributeGroup" required>-->
-<!--                        <option value="">--Select an Item--</option>-->
-<!--                    </select>-->
-<!--                </div>-->
-<!--                <div class="col-3"></div>-->
-<!--            </div>-->
-
             <div class="row text-justified">
                 <div class="col-3"></div>
-                <div class="col-3 form-group text-justified attrArea_2">
+                <div class="col-6 form-group text-justified attrArea_2">
                     <label for="Attribute_2">Pick the second attribute from below to describe your giftee</label> <br>
                     <select class="form-control attr2" name="attributeGroup2" required>
                         <option value="Select">--Select an Item--</option>
@@ -204,7 +192,12 @@
                         <option value="Philosophical">Philosophical</option>
                     </select>
                 </div>
-                <div class="col-3 form-group text-justified subattrArea_2">
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row text-justified">
+                <div class="col-3"></div>
+                <div class="col-6 form-group text-justified subattrArea_2">
                     <label for="subAttribute_2">Pick one sub attribute from below to describe your giftee</label> <br>
                     <select class="form-control sattr2" name="subattributeGroup2" required>
                         <option value="">--Select an Item--</option>
@@ -213,21 +206,10 @@
                 <div class="col-3"></div>
             </div>
 
-<!--            <div class="row text-justified">-->
-<!--                <div class="col-3"></div>-->
-<!--                <div class="col-6 form-group text-justified subattrArea_2">-->
-<!--                    <label for="subAttribute_2">Pick one sub attribute from below to describe your giftee</label> <br>-->
-<!--                    <select class="form-control sattr2" name="subattributeGroup2" required>-->
-<!--                        <option value="">--Select an Item--</option>-->
-<!--                    </select>-->
-<!--                </div>-->
-<!--                <div class="col-3"></div>-->
-<!--            </div>-->
-
             <div class="row text-justified">
                 <div class="col-3"></div>
-                <div class="col-3 form-group text-justified attrArea_3">
-                    <label for="Attribute_3">Pick the third attribute from below to describe your giftee</label> <br>
+                <div class="col-6 form-group text-justified attrArea_2">
+                    <label for="Attribute_3">Pick the second attribute from below to describe your giftee</label> <br>
                     <select class="form-control attr3" name="attributeGroup3" required>
                         <option value="Select">--Select an Item--</option>
                         <option value="Creative">Creative</option>
@@ -239,7 +221,11 @@
                         <option value="Philosophical">Philosophical</option>
                     </select>
                 </div>
-                <div class="col-3 form-group text-justified subattrArea_3">
+                <div class="col-3"></div>
+            </div>
+            <div class="row text-justified">
+                <div class="col-3"></div>
+                <div class="col-6 form-group text-justified subattrArea_3">
                     <label for="subAttribute_3">Pick one sub attribute from below to describe your giftee</label> <br>
                     <select class="form-control sattr3" name="subattributeGroup3" required>
                         <option value="">--Select an Item--</option>
@@ -247,20 +233,10 @@
                 </div>
                 <div class="col-3"></div>
             </div>
-<!--            <div class="row text-justified">-->
-<!--                <div class="col-3"></div>-->
-<!--                <div class="col-6 form-group text-justified subattrArea_3">-->
-<!--                    <label for="subAttribute_3">Pick one sub attribute from below to describe your giftee</label> <br>-->
-<!--                    <select class="form-control sattr3" name="subattributeGroup3" required>-->
-<!--                        <option value="">--Select an Item--</option>-->
-<!--                    </select>-->
-<!--                </div>-->
-<!--                <div class="col-3"></div>-->
-<!--            </div>-->
             <div class="row text-center" style="padding:3% 0 2% 0;">
                 <div class="col-2"></div>
                 <div class="col-8  text-center">
-                    <button class="submit gift_button border" name="submit" type="submit" value="submit" style="color: white;">Find me a Gift</button>
+                    <input class="submit gift_button border" name="submit" type="submit" value="Find me a Gift" style="color: white;">
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -301,7 +277,5 @@
 <!-- bootstarp js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<!--change script-->
-<script type="text/javascript" src="selectScript.js"></script>
 </body>
 </html>

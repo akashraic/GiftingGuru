@@ -1,0 +1,387 @@
+@font-face {
+    font-family: Baskerville;
+    font-weight: 900;
+    src: url(fonts/baskerville/BaskervilleBoldItalicBT.ttf);
+}
+
+html{
+    height:100%;
+    width: 100%;
+    margin:0;
+    font-size:16px;
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+    /* no horizontal scroll */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font_let_us {
+    font-family: Baskerville;
+    font-size:82px;
+}
+
+.font_let_us:first-letter {
+    text-transform: capitalize;
+}
+
+.gift_button {
+    border-radius: 100px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(160, 28, 53, 1);
+    border: none;
+}
+
+.contact_style {
+    margin-bottom: 1rem;
+    font-weight: 800;
+    line-height: 4rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .contact_section {
+    position:relative;
+    opacity:0.90;
+    background-size:cover;
+    margin: 0;
+
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background: no-repeat fixed center;
+}
+
+/* horizontal line */
+hr {
+    border: 0;
+    height: 1px;
+    background: #333 linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 1% 10%;
+}
+
+h2 {
+    width: 100%;
+    padding: 1%;
+    /*background-color: orange; */
+}
+.pimg1{
+    background-image:url('../img/image1.jpg');
+    /*min-height:100%;*/
+    height:100%;
+    width:100%;
+}
+
+.pimg2{
+    background-image:url('../img/image2.jpg');
+    /*min-height:400px;*/
+    height:100%;
+    width:100%;
+}
+
+.pimg3{
+    background-image:url('../img/image3.jpg');
+    height:100%;
+    width:100%;
+}
+
+.pimg4 {
+    background-image:url('../img/pagebg2.jpg');
+    height:100%;
+    width:100%;
+    /* Add the blur effect */
+    /*filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+}
+
+
+.pimg5 {
+    background-image:url('../img/pagebg_1.jpg');
+    height:100vh;
+    width:100vw;
+}
+
+.navbar .bg-light {
+    background-color: white;
+}
+
+.navbar-brand {
+    padding: 0 2% 0 2%;
+}
+
+.navbar-brand img {
+    padding-top: 10%;
+}
+
+.pimg6 {
+    background-image:url('../img/pagebg4.jpg');
+    height:100%;
+    width:100%;
+}
+
+.section{
+    text-align:center;
+    /*padding:50px 80px;*/
+    /*width: 100%;*/
+    /*margin: 0;*/
+}
+
+nav {
+    width: 100%;
+}
+
+
+.section-light{
+    background-color:#f4f4f4;
+    /*color:#666;*/
+}
+
+.section-dark{
+    background-color:#282e34;
+    color:#ddd;
+}
+
+.ptext{
+    position:absolute;
+    top:40%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    /*letter-spacing:8px;*/
+}
+
+.ptext1{
+    position:absolute;
+    top:23%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+}
+
+.ptext .border.trans{
+    background-color:transparent;
+}
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6 {
+        background-attachment:scroll;
+    }
+}
+
+/* add some margin top-bottom */
+.spacing-top-bottom {
+    margin: 2% 0%;
+    text-align: center;
+}
+
+/*display when hover */
+
+.how_it_works {
+    display: inline-block;
+    padding: 4rem;
+    margin-top: 0;
+    border-radius: 50%;
+    border-color: black;
+    text-align: center;
+}
+/*how_it_works*/
+
+p.show_on_hover {
+    opacity: 0;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+img.hide_on_hover {
+    opacity: 1;
+}
+img.hide_on_hover:hover {
+    opacity: 0;
+}
+
+p.show_on_hover:hover {
+    opacity: 1;
+}
+
+/*footer style*/
+footer {
+    margin: 0;
+    width: 100%;
+    opacity: 0.9;
+    background-color: white;
+    color: black;
+    /*margin-top: 50%;*/
+}
+.under_h5 {
+    border: 1px solid white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.quote {
+    text-align: center;
+}
+/* circle size and shape */
+.circles_size_position {
+}
+/* subtitle for 3 pieces */
+.subtitle {
+    width:100%;
+    margin: 5% 0%;
+    text-transform:uppercase;
+    color: black;
+    font-weight: bold;
+    /*background-color: white;*/
+    font-size: 1.1rem;
+}
+
+.footer_logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.inline_ul {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.inline_li_margin {
+    display: inline-block; margin: 1px 1%;
+}
+
+@media only screen and (max-width: 860px) {
+    .under_h5 {
+        margin-right: 20rem;
+        margin-left: 20rem;
+    }
+
+    #how_it_works_section {
+        width: 100vw;
+    }
+    .small_screen_small_size {
+        display: inline-block;
+        width: 100%;
+        /*padding: 0;*/
+        margin: 10px;
+    }
+    .subtitle {
+
+    }
+    .small_screen_small_size > button {
+        margin: auto;
+        padding: 2rem;
+
+    }
+
+    button > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #carousel_place{
+        height: 75%;
+        width: 100vw;
+    }
+}
+
+#carousel_place{
+    width: 100vw;
+    height: 50vh;
+    padding: 2rem 0;
+    margin: 0;
+    background-color: #A01C35;
+}
+
+.center_my_col {
+    text-align: center;
+}
+
+.row {
+    width: 100vw;
+    margin:0;
+}
+#how_it_works_section {
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    text-align: center;
+}
+
+/*hover over element*/
+
+/* dont show p initially */
+.show_p_on_hover {
+    display: none;
+    font-weight: 700;
+    color: white;
+}
+
+/* if hoverd over button */
+.animate_btn_on_hover:hover {
+    background-color: black;
+    animation: change_opacity;
+    animation-duration: 1s;
+    opacity: 0.9;
+}
+
+/* if hover over butt blur image */
+.animate_btn_on_hover:hover > .blur_img {
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+/* when hover over button, show paragraph */
+.animate_btn_on_hover:hover > .show_p_on_hover {
+    position: absolute;
+    display: block;
+
+    animation: slideUp;
+    animation-duration: 1s;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* slides element up */
+@keyframes slideUp {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+/* changes opacity of elemnt */
+@keyframes change_opacity {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
