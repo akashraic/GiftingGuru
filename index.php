@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./img/tab_logo.png" type="image/png">
 
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"817937b40cace775ce4ce94ac","lid":"aa46c1180c","uniqueMethods":true}) })</script>
+    <!--<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"817937b40cace775ce4ce94ac","lid":"aa46c1180c","uniqueMethods":true}) })</script>-->
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">

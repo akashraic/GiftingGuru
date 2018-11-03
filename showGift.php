@@ -50,9 +50,7 @@
         $stmt->execute();
         $result = $stmt->get_result();
 
-
-        echo $age . "; " . $gender . "; " . $budget . "; " . $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
-
+        //echo $age . "; " . $gender . "; " . $budget . "; " . $attributeGroup . "; " . $subattributeGroup . "; " . $attributeGroup2 . "; " . $subattributeGroup2 . "; " . $attributeGroup3 . "; " . $subattributeGroup3 ."</br>";
 
         //------------ Randomized
 
@@ -71,11 +69,17 @@
         }
         //print_r($results);
 
-        echo "<div>";
-        for ($i = 0; $i < sizeof($results); $i++){
-            
-            //$id = rand(1,5);
-            echo "<div class='circular'><a href=\"" . $results[$i]['url'] . "\"><img src=\"". $results[$i]['image'] ."\"/></a></div>";
+        echo "<div class='results'>";
+        $alreadyDisplayed = array();
+        $resultCount = 0;
+        while($resultCount < 5){
+            $id = rand(0,sizeof($results)-1);
+
+            if (!in_array($results[$id]['url'], $alreadyDisplayed)){
+                echo "<div class='circular'><a href=\"" . $results[$id]['url'] . "\"><img src=\"". $results[$id]['image'] ."\"/></a></div>";
+                array_push($alreadyDisplayed, $results[$id]['url']);
+                $resultCount++;
+            }
         }
         echo "</div>";
 
