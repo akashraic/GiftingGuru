@@ -23,7 +23,7 @@ a {
 }
 
 .font_let_us {
-    font-family: Baskerville, serif;
+    font-family: Baskerville;
     font-size:82px;
 }
 
@@ -40,6 +40,16 @@ a {
     border: none;
 }
 
+hr.style {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
 .contact_style {
     margin-bottom: 1rem;
     font-weight: 800;
@@ -53,11 +63,6 @@ a {
     opacity:0.90;
     background-size:cover;
     margin: 0;
-
-    /*
-      fixed = parallax
-      scroll = normal
-    */
     background: no-repeat fixed center;
 }
 
@@ -130,9 +135,6 @@ h2 {
 
 .section{
     text-align:center;
-    /*padding:50px 80px;*/
-    /*width: 100%;*/
-    /*margin: 0;*/
 }
 
 nav {
@@ -145,7 +147,7 @@ nav {
     /*color:#666;*/
 }
 
-.section-dark{
+.dark{
     background-color:#282e34;
     color:#ddd;
 }
@@ -171,8 +173,8 @@ nav {
 }
 
 .ptext .border{
-    /*background-color:#111;*/
-    /*color:#fff;*/
+    background-color:#111;
+    color:#fff;
     padding:20px;
 }
 
@@ -232,7 +234,6 @@ footer {
 }
 .under_h5 {
     border: 1px solid white;
-    margin-top: 0px;
     margin-bottom: 10px;
     margin-right: 15px;
 }
@@ -307,9 +308,8 @@ footer {
 }
 
 #carousel_place{
-    width: 100vw;
-    height: 50vh;
-    padding: 2rem 0;
+    width: 100%;
+    padding: 2% 0;
     margin: 0;
     background-color: #A01C35;
 }
